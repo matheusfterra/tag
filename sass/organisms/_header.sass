@@ -1,3 +1,5 @@
+body
+	height: 2000px
 header
 	+clearfix
 	min-height: 250px
@@ -10,22 +12,19 @@ header
 		attachment: fixed
 	.top
 		height: 250px
+		width: 100%
+		display: table
 	.logo
-		position: absolute
-		left: 50%
-		margin-left: -150px
-		margin-top: 60px
+		margin: 0 auto
+		width: 300px
 		display: table
 		img
 			width: 300px
-			margin: 0 auto
-			float: left
 	.links
-		float: right
 		margin-top: 30px
+		float: right
 		ul
 			li
-				
 				display: inline-block
 				margin: 0 10px 0 0
 				a
@@ -86,23 +85,27 @@ header
 							+transition(.3s)
 	.barra.navbar
 		min-height: 35px !important		
-	.barra.navbar.navbar-inverse.navbar-fixed-top.teste
-  		height: 35px !important
-  		display: table
-  		+transition(.3s)
-  		img
-  			display: table
-  			float: left
-  			height: 45px	
-	  	ul
-	  		float: right
-	  		margin-top: 7px
-	  		li
-	  			margin-top: 10px
-	  			+font-size(25px)
+	.barra.navbar.navbar-inverse.navbar-fixed-top
+		&.teste
+	  		height: 35px !important
+	  		display: table
+	  		+transition(.3s)
+	  		img
+	  			display: table
+	  			float: left
+	  			height: 45px	
+		  	ul
+		  		float: right
+		  		margin-top: 7px
+		  		li
+		  			margin-top: 10px
+		  			+font-size(25px)
+			
 	.navbar-form.navbar-right
 		+breakpoint($tablet)
 			display: none
 		+breakpoint($celular)
-			display: none		
+			display: none	
+	.btn-default
+		margin: 0 auto	
 	
