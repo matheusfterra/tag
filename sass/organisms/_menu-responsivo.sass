@@ -1,7 +1,9 @@
 .layout
 	&.ativo
 		+transition(.2s)
-		padding-left: 150px
+		
+		
+
 .toggle
 		width: 35px
 		height: 35px
@@ -55,9 +57,13 @@
 	position: fixed
 	left: -150px 
 	top: 0
+	z-index: 1
 	+gradient(0deg, $azul, $cinza-escuro)
 	&.ativo
 		left: 0
+		+transition(.2s)
+	&.top.ativo
+		top: 45px
 		+transition(.2s)
 	ul
 		li
@@ -69,3 +75,27 @@
 				&:hover,
 				&:focus
 					background-color: rgba($preto, .4)
+.formulario-search
+	border: 0
+	margin-top: 50px
+.search
+	width: 110px
+	height: auto
+	+border-radius(90px)
+	border: 2px solid $cinza-claro
+	padding: 7px
+	+transition(.3s)
+	&:hover
+		border-color: $azul
+	&:focus
+		border-color: $verde
+.btn-search
+	width: 35px	
+	height: 35px
+	&:hover
+		border-color: $verde
+		color: $verde
+	&:focus
+		border-color: $azul
+		color: $azul
+	+transition(.3s)

@@ -18,6 +18,10 @@
 			<li><a href="#">Sobre</a></li>
 			<li><a href="#">Contato</a></li>
 		</ul>
+		<form class="formulario-search">
+          	<input type="text" class="search" placeholder="Search">
+        	<button type="submit" class="btn-search"><i class="fa fa-chevron-right"></i></button>
+      	</form>
 	</nav>
 	<header>
 	<div class="top">
@@ -30,11 +34,11 @@
 					<li><a href="https://github.com/matheusfterra/"  target="_blank"><i class="fa fa-youtube"></i></a></li>
 				</ul>
 			</div><!--links-->
-			<div class="logo">
+		</div><!--container-->
+		<div class="logo">
 				<a href="#"><img src="images/logo.png" alt="logo"></a>
 			</div><!--logo-->
 			
-		</div><!--container-->
 	</div><!--top-->
 	
 	<div class="barra">	
@@ -54,7 +58,7 @@
         		<div class="form-group">
           			<input type="text" class="form-control" placeholder="Search">
         		</div>
-        		<button type="submit" class="btn btn-default">Submit</button>
+        		<button type="submit" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
       		</form>
 			<a class="toggle" href="javascript:;">
 				<span></span>
@@ -83,8 +87,11 @@
 		$(window).scroll(function() {
   		if ($(document).scrollTop() > 250) {
    			$('.barra').addClass('navbar navbar-inverse navbar-fixed-top teste');
+   			$('.menu-responsivo').addClass('top');
   		} else {
   			$('.barra').removeClass('navbar navbar-inverse navbar-fixed-top teste');
+  			$('.menu-responsivo').removeClass('top');
+
  		}
 		});
 	$(function(){
