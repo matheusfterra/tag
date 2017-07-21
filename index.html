@@ -1,1 +1,91 @@
-<h1>Olá mundo</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>T.A.G</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="css/home.css">	
+		
+</head>
+<body>
+<div class="layout">
+	<header>
+	<div class="top">
+		<div class="container">
+			<div class="links">
+				<ul class="social">
+					<li><a href="https://www.facebook.com/matheusfterra" target="_blank"><i class="fa fa-facebook"></i></a><li>
+					<li><a href="https://github.com/matheusfterra/"  target="_blank"><i class="fa fa-git"></i></a></li>
+					<li><a href="https://github.com/matheusfterra/"  target="_blank"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://github.com/matheusfterra/"  target="_blank"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+			</div><!--links-->
+			<div class="logo">
+				<a href="#"><img src="images/logo.png" alt="logo"></a>
+			</div><!--logo-->
+			
+		</div><!--container-->
+	</div><!--top-->
+	
+	<div class="barra">	
+		<div class="container">
+			<a href="#">	
+				<img src="images/logo2.png" alt="logo">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Publicações</a></li>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>
+			</nav>
+			<form class="navbar-form navbar-right">
+        		<div class="form-group">
+          			<input type="text" class="form-control" placeholder="Search">
+        		</div>
+        		<button type="submit" class="btn btn-default">Submit</button>
+      		</form>
+			<a class="toggle" href="javascript:;">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div><!--container-->
+	</div><!--barra-->
+</header>
+<main>
+<h1>Primeira PAGINA</h1><br><br><br>
+
+</main>
+<footer>
+	<div class="logo-rodape">
+			<a href="#">
+				<img src="images/logo.png" alt="Logo Rodapé">
+			</a>
+			<p>2017 Todos os Direitos Reservados</p>
+
+		</div><!--logo-rodape-->
+</footer>
+</div><!--layout-->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(window).scroll(function() {
+  		if ($(document).scrollTop() > 250) {
+   			$('.barra').addClass('navbar navbar-inverse navbar-fixed-top teste');
+  		} else {
+  			$('.barra').removeClass('navbar navbar-inverse navbar-fixed-top teste');
+ 		}
+		});
+	$(function(){
+		$('.toggle').click(function(){
+			$('.layout').toggleClass('ativo')
+			$('.menu-responsivo').toggleClass('ativo')
+			$(this).toggleClass('ativo');
+		});
+	});
+</script>
+</body>
+</html>

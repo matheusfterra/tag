@@ -1,0 +1,38 @@
+body {
+  padding-top: 50px;
+}
+
+nav a {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  font-size: 18px;
+}
+
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+
+
+nav.navbar.teste {
+  min-height: 85px;
+}
+
+nav.teste a {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 15px;
+}
+
+nav.teste .navbar-brand {
+  font-size: 25px;
+}
+
+nav.teste .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+}

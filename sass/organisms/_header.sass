@@ -1,0 +1,108 @@
+header
+	+clearfix
+	min-height: 250px
+	position: relative
+	background:
+		position: top center
+		repeat: no-repeat
+		color: $cinza-claro
+		size: cover
+		attachment: fixed
+	.top
+		height: 250px
+	.logo
+		position: absolute
+		left: 50%
+		margin-left: -150px
+		margin-top: 60px
+		display: table
+		img
+			width: 300px
+			margin: 0 auto
+			float: left
+	.links
+		float: right
+		margin-top: 30px
+		ul
+			li
+				
+				display: inline-block
+				margin: 0 10px 0 0
+				a
+					color: $cinza-escuro
+					display: block
+					border: 1px solid $cinza-escuro
+					padding: 4px
+					width: 30px
+					height: 30px
+					line-height: 17px
+					text-align: center
+					+font-size(30px)
+					+border-radius(120px)
+					&:hover
+						color: $preto
+	
+	.barra
+		height: 50px
+		width: 100%
+		display: table
+		+gradient(0deg, #595757, $cinza-escuro)
+		img
+			display: none
+		nav
+			float: left
+			display: table
+
+			ul
+				
+				margin: 0 auto
+				+breakpoint($tablet)
+					display: none
+				+breakpoint($celular)
+					display: none
+				li
+					display: inline-block
+					margin-left: 35px
+					margin-top: 15px
+					line-height: 100%
+					+font-size(35px)
+					a
+						color: $branco
+						text-transform: uppercase
+						
+						&:hover
+							color: $preto
+							+transition(.3s)
+							&:after
+								width: 60%
+									
+						&:after
+							content: ""
+							display: table
+							margin: 5px auto 0
+							width: 0%
+							height: 2px
+							background: $branco
+							+transition(.3s)
+	.barra.navbar
+		min-height: 35px !important		
+	.barra.navbar.navbar-inverse.navbar-fixed-top.teste
+  		height: 35px !important
+  		display: table
+  		+transition(.3s)
+  		img
+  			display: table
+  			float: left
+  			height: 45px	
+	  	ul
+	  		float: right
+	  		margin-top: 7px
+	  		li
+	  			margin-top: 10px
+	  			+font-size(25px)
+	.navbar-form.navbar-right
+		+breakpoint($tablet)
+			display: none
+		+breakpoint($celular)
+			display: none		
+	
