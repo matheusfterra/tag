@@ -1,3 +1,7 @@
+.layout
+	&.ativo
+		+transition(.2s)
+		padding-left: 150px
 .toggle
 		width: 35px
 		height: 35px
@@ -45,4 +49,23 @@
 				top: 13px
 			&:nth-child(3)
 				top: 22px
-
+.menu-responsivo
+	width: 150px
+	height: 100%
+	position: fixed
+	left: -150px 
+	top: 0
+	+gradient(0deg, $azul, $cinza-escuro)
+	&.ativo
+		left: 0
+		+transition(.2s)
+	ul
+		li
+			border-bottom: 1px solid $branco
+			a
+				padding: 7px
+				display: block
+				color: $branco
+				&:hover,
+				&:focus
+					background-color: rgba($preto, .4)
