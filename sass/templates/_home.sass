@@ -42,7 +42,7 @@
 		.sombra
 			+background-opacity($color: $preto, $opacity: 0.7) 
 	+breakpoint($tablet)
-		margin-left: 0
+		margin-left: 10px
 	+breakpoint($celular)
 		margin-left: 0
 .destaque-3
@@ -61,25 +61,25 @@
 		.sombra
 			+background-opacity($color: $preto, $opacity: 0.7) 
 	+breakpoint($tablet)
-		margin-left: 0
+		margin-left: 10px
 	+breakpoint($celular)
 		margin-left: 0
 .sombra
-		width: 90%
-		position: absolute
-		bottom: 10px
-		left: 0
-		padding-left: 15px
-		+border-radius(10px)
-		+background-opacity($color: $preto, $opacity: 0.5) 
-		a
-			color: $verde
-			+font-size(35px)
-			&:hover
-				color: $branco
-				+transition(.2s)
-			&:after
-				width: 60%
+	width: 90%
+	position: absolute
+	bottom: 10px
+	left: 0
+	padding-left: 15px
+	+border-radius(10px)
+	+background-opacity($color: $preto, $opacity: 0.5) 
+	a
+		color: $verde
+		+font-size(35px)
+		&:hover
+			color: $branco
+			+transition(.2s)
+		&:after
+			width: 60%
 h2
 	+font-size(25px)
 	color: #F66F0C
@@ -96,18 +96,20 @@ h2
 	img
 		margin: 0 auto
 		+img-responsive
-.categoria-geral-1
+.categoria-geral
 		+clearfix
 		+make-sm-column(12)
 		+border-radius(15px)
-		background: #DFDFDF 
+		background: #EFEEEE 
+		margin-bottom: 40px
+
 		h1
 			+font-size(50px)
 			color: #F66F0C
 			text-transform: uppercase
 			font-weight: bold
 			margin-left: 50px	
-.categoria-1
+.categoria
 	+make-sm-column(12)
 	height: 330px
 	+make-row
@@ -121,16 +123,36 @@ h2
 		margin-bottom: 15px
 		img
 			+img-responsive
-	+breakpoint($tablet)	
-		.item
-			+make-sm-column(6)
-			margin-top: 20px
-			margin-bottom: 20px
-	+breakpoint($celular)	
-		.item
-			+make-sm-column(12)
-			margin-top: 20px
-			margin-bottom: 20px
+		+breakpoint($tablet)	
+			.item
+				+make-sm-column(6)
+				margin-top: 20px
+				margin-bottom: 20px
+		+breakpoint($celular)	
+			.item
+				+make-sm-column(12)
+				margin-top: 20px
+				margin-bottom: 20px
+		&:hover
+			.sombra
+				+background-opacity($color: $preto, $opacity: 0.7) 
+	.sombra
+		width: 90%
+		position: absolute
+		bottom: 10px
+		left: 15px
+		padding-left: 15px
+		+border-radius(10px)
+		+background-opacity($color: $preto, $opacity: 0.5) 
+		a
+			color: $verde
+			+font-size(35px)
+			&:hover
+				color: $branco
+				+transition(.2s)
+			&:after
+				width: 60%
+
 .slick-prev 
     left: 0 !important
     z-index: 1 !important
