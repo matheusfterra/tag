@@ -1,0 +1,44 @@
+.content
+	+clearfix
+	+make-row
+	+make-sm-column(12)
+	margin-top: 30px
+.conteudo
+	margin-bottom: 100px
+	+make-sm-column(9)
+	+breakpoint($tablet)
+		+make-sm-column(12)
+	a
+		color: $verde
+		+font-size(65px)
+		text-align: center
+
+		&:hover
+			color: $azul
+			+transition(.2s)
+		&:after
+			width: 60%
+	img
+		+img-responsive
+		margin: 30px auto
+h2
+	+font-size(24px)
+	color: $cinza-escuro
+	font-weight: bold
+	margin-top: 35px
+.texto
+	+font-size(30px)
+	color: $preto
+.comentarios
+	margin-top: 100px
+.sidebar
+	+make-sm-column(3)
+	background: $cinza-escuro
+	+breakpoint($tablet)
+		+make-sm-column(4)
+		+make-sm-column-offset(4)
+.anuncio-2
+	background: $preto
+	img
+		+img-responsive
+	
